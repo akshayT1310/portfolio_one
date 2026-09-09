@@ -3,17 +3,18 @@
 import { motion } from 'framer-motion';
 
 const experiences = [
-  {
+  {/*{
     title: 'Technical Software Engineer',
     company: 'KSR Realty Ventures Pvt. Ltd. — Indore',
     date: 'Jul 2026 – Present',
     description:
       'Developing and maintaining modern web applications and digital solutions for real estate operations. Working across frontend development, responsive UI, website optimization, software integration, and technical implementation to improve business workflows and digital experiences.',
-  },
+  },*/},
+  
   {
     title: 'Product Engineer',
     company: 'Signimus Technology Pvt. Ltd.',
-    date: 'jan 2026 – Jun 2026',
+    date: 'jan 2026 – Present',
     description:
       'Designed and shipped polished web products, AI-enabled workflows, and robust engineering systems with a focus on scalable architecture, responsive interfaces, and reliable product delivery.',
   },

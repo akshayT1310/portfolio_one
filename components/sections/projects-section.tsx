@@ -40,6 +40,24 @@ const projects = [
     stack: ['React', 'Vite', 'Tailwind CSS', 'Real Estate'],
     live: 'https://www.ksrrealtyventures.in',
   },
+  {
+  title: 'FortuneAdsLLC',
+  type: 'Performance Marketing & Lead Generation',
+  image: '/projects/fortuneadsllc.png',
+  description:
+    'A premium performance marketing platform built to connect advertisers and publishers through high-intent consumer acquisition. The platform focuses on measurable campaigns, quality leads, calls, clicks, and scalable digital growth.',
+  stack: ['React', 'Vite', 'JavaScript', 'Responsive Design', 'Vercel'],
+  live: 'https://fortuneadslcc.vercel.app/',
+},
+{
+  title: 'Covian Hotels & Resorts',
+  type: 'Luxury Hospitality & Digital Booking Experience',
+  image: '/projects/covianhotels.png',
+  description:
+    'A luxury hospitality website crafted to showcase premium hotels and resorts through immersive visuals, destination discovery, refined user experience, and an integrated booking journey.',
+  stack: ['React', 'Vite', 'JavaScript', 'Modern UI/UX', 'Responsive Design', 'Vercel'],
+  live: 'https://covianhotels.vercel.app/',
+},
 ];
 
 export function ProjectsSection() {

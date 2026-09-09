@@ -147,13 +147,13 @@ export function HeroSection() {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 font-medium text-slate-100 backdrop-blur transition duration-300 hover:bg-white/10 hover:border-cyan-400/30"
             >
               <Download size={16} />
-              Download Resume
+            Download Resume
             </a>
           </motion.div>
         </motion.div>
