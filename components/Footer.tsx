@@ -1,24 +1,19 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, Instagram, Linkedin, Mail, MapPin } from 'lucide-react';
+import { Instagram, Linkedin, MapPin, Phone } from 'lucide-react';
 
 const socialLinks = [
   {
     href: 'https://www.linkedin.com/in/akshay-tiwari3511/',
     label: 'LinkedIn',
-    icon: Linkedin
-  },
-  {
-    href: 'https://github.com/akshayT1310',
-    label: 'GitHub',
-    icon: Github
+    icon: Linkedin,
   },
   {
     href: 'https://www.instagram.com/__aakshatt_/',
     label: 'Instagram',
-    icon: Instagram
-  }
+    icon: Instagram,
+  },
 ];
 
 export default function Footer() {
@@ -28,38 +23,200 @@ export default function Footer() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.55, ease: 'easeOut' }}
-      className="border-t border-white/10 bg-[#050816]"
+      className="relative border-t border-slate-200 bg-white/70"
     >
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-16 lg:px-10">
-        <div className="grid gap-10 lg:grid-cols-[1.3fr_0.7fr_0.7fr]">
+
+        {/* ================= TOP FOOTER ================= */}
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.75fr_1fr]">
+
+          {/* Brand */}
           <div className="max-w-xl">
-            <p className="mb-3 text-sm uppercase tracking-[0.35em] text-cyan-400">Portfolio</p>
-            <h2 className="text-2xl font-semibold text-white">Akshay Tiwari</h2>
-            <p className="mt-2 text-lg font-medium text-slate-300">Full Stack Developer</p>
-            <p className="mt-4 text-base leading-7 text-slate-400">
-              Building scalable web applications with modern technologies and creating impactful digital experiences.
+            <img
+              src="/projects/logo1.png"
+              alt="VEZIXA LABS"
+              className="h-16 w-auto object-contain"
+            />
+
+            <p className="mt-4 max-w-sm text-sm leading-6 text-slate-600">
+              Thoughtful engineering, intelligent software, and refined digital
+              products for businesses building what&apos;s next.
             </p>
           </div>
 
+          {/* Explore */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-300">Contact</h3>
-            <ul className="mt-4 space-y-3 text-sm text-slate-400">
-              <li className="flex items-center gap-3">
-                <Mail size={16} className="text-cyan-400" />
-                <a href="mailto:takshaymain13@gmail.com" className="transition hover:text-cyan-300">
-                  takshaymain13@gmail.com
+            <h3 className="text-sm font-semibold text-slate-900">
+              Explore
+            </h3>
+
+            <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm text-slate-600">
+              <li>
+                <a
+                  href="/projects"
+                  className="transition hover:text-violet-800"
+                >
+                  Work
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <MapPin size={16} className="text-cyan-400" />
-                <span>Indore, Madhya Pradesh, India</span>
+
+              <li>
+                <a
+                  href="/#services"
+                  className="transition hover:text-violet-800"
+                >
+                  Services
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/#about"
+                  className="transition hover:text-violet-800"
+                >
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/#process"
+                  className="transition hover:text-violet-800"
+                >
+                  Process
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/#faq"
+                  className="transition hover:text-violet-800"
+                >
+                  FAQ
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/#contact"
+                  className="transition hover:text-violet-800"
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
 
+          {/* Services */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-300">Social</h3>
-            <div className="mt-4 flex flex-wrap gap-3">
+            <h3 className="text-sm font-semibold text-slate-900">
+              Services
+            </h3>
+
+            <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm text-slate-600">
+              <li>
+                <a
+                  href="/services/web-development"
+                  className="transition hover:text-violet-800"
+                >
+                  Web Development
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services/ai-solutions"
+                  className="transition hover:text-violet-800"
+                >
+                  AI Solutions
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services/saas-development"
+                  className="transition hover:text-violet-800"
+                >
+                  SaaS Development
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services/digital-products"
+                  className="transition hover:text-violet-800"
+                >
+                  Digital Products
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services/brand-and-product-design"
+                  className="transition hover:text-violet-800"
+                >
+                  UI/UX Design
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services/automation-and-integrations"
+                  className="transition hover:text-violet-800"
+                >
+                  Automation
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* ================= CONTACT SECTION ================= */}
+        <div className="border-t border-slate-200 pt-8">
+
+          <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
+
+            {/* Contact */}
+            <div>
+              <h3 className="text-sm font-semibold text-slate-900">
+                Contact
+              </h3>
+
+              <ul className="mt-4 space-y-3 text-sm text-slate-600">
+
+                {/* Phone */}
+                <li className="flex items-center gap-3">
+                  <Phone
+                    size={16}
+                    className="text-violet-700"
+                  />
+
+                  <a
+                    href="tel:8815190636"
+                    className="transition hover:text-violet-800"
+                  >
+                    8815190636
+                  </a>
+                </li>
+
+                {/* Location */}
+                <li className="flex items-center gap-3">
+                  <MapPin
+                    size={16}
+                    className="text-violet-700"
+                  />
+
+                  <span>
+                    Indore, Madhya Pradesh, India
+                  </span>
+                </li>
+
+              </ul>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex gap-3">
+
               {socialLinks.map(({ href, label, icon: Icon }) => (
                 <a
                   key={label}
@@ -67,19 +224,29 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={label}
-                  className="group rounded-full border border-white/10 bg-white/5 p-3 text-slate-300 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-500/10 hover:text-cyan-300"
+                  className="group rounded-lg border border-slate-200 bg-white p-3 text-slate-600 transition-all duration-300 hover:-translate-y-1 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-800"
                 >
-                  <Icon size={18} className="transition duration-300 group-hover:scale-110" />
+                  <Icon
+                    size={18}
+                    className="transition duration-300 group-hover:scale-110"
+                  />
                 </a>
               ))}
+
             </div>
           </div>
-        </div>
 
-        <div className="border-t border-white/10 pt-6">
-          <div className="flex flex-col gap-3 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
-            <p>© 2026 Akshay Tiwari. All Rights Reserved.</p>
-            <p className="text-slate-400">Designed &amp; Developed by Akshay Tiwari</p>
+          {/* ================= COPYRIGHT ================= */}
+          <div className="mt-8 border-t border-slate-100 pt-6 text-center text-sm text-slate-500">
+
+            <p>
+              © 2026 VEZIXA LABS. All rights reserved.
+            </p>
+
+            <p className="mt-2">
+              Designed &amp; Developed with ❤️
+            </p>
+
           </div>
         </div>
       </div>
